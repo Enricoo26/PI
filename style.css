@@ -195,6 +195,14 @@ main {
     display: flex;
     flex-direction: column;
 }
+.eventos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+
 
 
 @media (max-width:1200px) {

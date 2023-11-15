@@ -10,7 +10,7 @@ const executarCodigos = () => {
       cookieBox.classList.remove("show");
 
       if (botao.id == "aceitarBtn") {
-        document.cookie = "cookieBy= codinglab; max-age=" + 60;
+        document.cookie = "cookieBy= codinglab; max-age=" + 60*60*24;
       }
     });
   });
