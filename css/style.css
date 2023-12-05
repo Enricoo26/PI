@@ -228,7 +228,8 @@ main {
     padding: 3% 9%;
     box-shadow: 0 0.1rem 0.5rem #777777;
 }
-footer{
+
+footer {
     background-color: #131216;
     color: #ccc;
     text-align: center;
@@ -239,17 +240,46 @@ footer{
     padding: 2%;
     font-size: 20px;
 }
+
 footer a {
     text-decoration: underline;
     color: #ccc;
 }
-.copy{
+
+.copy {
     margin-bottom: 25px;
+    margin-top: 25px;
 }
-.redes a{
+
+.redes a {
     padding-right: 100px;
     text-align: center;
 }
+
+.map-responsive {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-responsive iframe{
+    width: 1000%;
+}
+
+.calendario {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.calendario iframe{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+
 
 
 
