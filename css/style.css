@@ -183,23 +183,72 @@ main {
     background-color: #ea835673;
 }
 
-.historia-incinerador{
+.historia-incinerador {
     display: flex;
-    align-items:center ;
+    align-items: center;
 }
-.historia-incinerador img{
+
+.historia-incinerador img {
     max-height: 500px;
 }
 
-.texto-historia{
+.texto-historia {
     display: flex;
     flex-direction: column;
 }
-.eventos{
+
+.eventos {
     width: 100%;
     display: flex;
     flex-direction: column;
     text-align: justify;
+    flex-wrap: wrap;
+}
+
+.texto-eventos h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.paragrafo-eventos {
+    margin-bottom: 15px;
+    margin-right: 50px;
+    text-align: justify;
+    width: 800px;
+    margin-top: 40px;
+}
+
+.imagem-evento {
+    float: right
+}
+
+.evento {
+    display: flex;
+    align-items: center;
+    padding: 3% 9%;
+    box-shadow: 0 0.1rem 0.5rem #777777;
+}
+footer{
+    background-color: #131216;
+    color: #ccc;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2%;
+    font-size: 20px;
+}
+footer a {
+    text-decoration: underline;
+    color: #ccc;
+}
+.copy{
+    margin-bottom: 25px;
+}
+.redes a{
+    padding-right: 100px;
+    text-align: center;
 }
 
 
@@ -208,9 +257,10 @@ main {
 @media (max-width:1200px) {
 
 
-    html{
+    html {
         width: 100%;
     }
+
     .navigation {
         padding: 18px 20px;
     }
@@ -260,7 +310,9 @@ main {
         width: 100%;
     }
 
-    .conteudo {
+    .conteudo,
+    .eventos,
+    .evento {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -268,7 +320,8 @@ main {
         justify-content: space-between;
     }
 
-    .conteudo img,.conteudo p{
+    .conteudo img,
+    .conteudo p {
         width: 100%;
         font-size: 18px;
     }
@@ -292,12 +345,24 @@ main {
     #banner img {
         width: 100%;
     }
-    .historia-incinerador{
+
+    .historia-incinerador {
         flex-direction: column;
         width: 100%;
-        
-}
-.historia-incinerador h3{
-    text-align: center;
-}
+
+    }
+
+    .historia-incinerador h3 {
+        text-align: center;
+    }
+
+    .eventos h3,
+    .eventos p {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .evento img {
+        width: 100%;
+    }
 }
