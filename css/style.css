@@ -190,7 +190,8 @@ main {
 }
 
 .historia-incinerador img {
-    max-height: 500px;
+    max-width: 700px;
+    margin-right: 25px;
 }
 
 .texto-historia {
@@ -206,7 +207,7 @@ main {
     flex-wrap: wrap;
 }
 
-.texto-eventos{
+.texto-eventos {
     margin-left: 50px;
     width: 100%;
     display: flex;
@@ -270,7 +271,7 @@ footer a {
     justify-content: center;
 }
 
-.map-responsive iframe{
+.map-responsive iframe {
     width: 1000%;
 }
 
@@ -280,16 +281,34 @@ footer a {
     align-items: center;
 }
 
-.calendario iframe{
+.calendario iframe {
     height: 500px;
     width: 100%;
     margin-top: 5px;
 }
-.lista{
+
+.lista {
     padding: 20px 13%;
     font-size: 19px;
     list-style: circle;
 }
+#nossos-apoios{
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#nossos-apoios div img{
+    max-width: 150px;
+    margin:25px;
+}
+#nossos-apoios div a{
+    padding: 25px;
+}
+
+
 
 
 
@@ -402,24 +421,30 @@ footer a {
         flex-direction: column;
         width: 100%;
     }
+
     .evento h3,
     .evento p {
         flex-direction: column;
         width: 100%;
     }
-    .evento{
+
+    .evento {
         width: 100%;
         flex-direction: column;
         margin-left: 0;
     }
 
-    .evento img{
+    .evento img {
         width: 100%;
         margin-left: 0;
     }
-    .texto-eventos{
+
+    .texto-eventos {
         text-align: center;
         margin-left: 0;
+    }
+    #nossos-apoios div img{
+        width: 100%;
     }
 
 }
