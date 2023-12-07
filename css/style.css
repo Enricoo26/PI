@@ -99,6 +99,7 @@ main {
 
 #banner img {
     width: 800px;
+    padding-left: 50px;
 }
 
 .texto-banner {
@@ -205,6 +206,14 @@ main {
     flex-wrap: wrap;
 }
 
+.texto-eventos{
+    margin-left: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .texto-eventos h3 {
     font-size: 30px;
     margin-bottom: 15px;
@@ -214,19 +223,17 @@ main {
     margin-bottom: 15px;
     margin-right: 50px;
     text-align: justify;
-    width: 800px;
     margin-top: 40px;
+    font-size: 20px;
 }
 
-.imagem-evento {
-    float: right
-}
 
 .evento {
     display: flex;
     align-items: center;
     padding: 3% 9%;
     box-shadow: 0 0.1rem 0.5rem #777777;
+    width: 100%;
 }
 
 footer {
@@ -274,11 +281,15 @@ footer a {
 }
 
 .calendario iframe{
-    height: 200px;
+    height: 500px;
     width: 100%;
-    margin-bottom: 25px;
+    margin-top: 5px;
 }
-
+.lista{
+    padding: 20px 13%;
+    font-size: 19px;
+    list-style: circle;
+}
 
 
 
@@ -391,8 +402,24 @@ footer a {
         flex-direction: column;
         width: 100%;
     }
-
-    .evento img {
+    .evento h3,
+    .evento p {
+        flex-direction: column;
         width: 100%;
     }
+    .evento{
+        width: 100%;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .evento img{
+        width: 100%;
+        margin-left: 0;
+    }
+    .texto-eventos{
+        text-align: center;
+        margin-left: 0;
+    }
+
 }
